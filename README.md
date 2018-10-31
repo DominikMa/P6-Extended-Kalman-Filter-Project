@@ -36,7 +36,7 @@ Dataset 1:
 
 Dataset 2:
 
-![](./P6_laser_rader_data1.gif)
+![](./P6_laser_rader_data2.gif)
 
 # Build & Run
 
