@@ -70,14 +70,12 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
      ****************************************************************************/
     if (!is_initialized_) {
         // first measurement
-        cout << "EKF: " << endl;
+        // cout << "EKF: " << endl;
         previous_timestamp_ = measurement_pack.timestamp_;
         if (measurement_pack.sensor_type_ == MeasurementPackage::RADAR) {
             /**
             Convert radar from polar to cartesian coordinates and initialize state.
             */
-            cout << "x: " << measurement_pack.raw_measurements_[0] * cos(measurement_pack.raw_measurements_[1]) << endl;
-            cout << "y: " << measurement_pack.raw_measurements_[0] * sin(measurement_pack.raw_measurements_[1]) << endl;
             ekf_.x_ << measurement_pack.raw_measurements_[0] * cos(measurement_pack.raw_measurements_[1]),
                     measurement_pack.raw_measurements_[0] * sin(measurement_pack.raw_measurements_[1]),
                     measurement_pack.raw_measurements_[2] * cos(measurement_pack.raw_measurements_[1]),
@@ -86,8 +84,6 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
             /**
             Initialize state.
             */
-            cout << "x: " << measurement_pack.raw_measurements_[0] << endl;
-            cout << "y: " << measurement_pack.raw_measurements_[1] << endl;
             ekf_.x_ << measurement_pack.raw_measurements_[0], measurement_pack.raw_measurements_[1], 0, 0;
         }
 

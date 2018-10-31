@@ -1,3 +1,0 @@
-/home/dominik/Udacity/Project/Term2/P6/P6-Extended-Kalman-Filter-Project/build/CMakeFiles/rebuild_cache.dir
-/home/dominik/Udacity/Project/Term2/P6/P6-Extended-Kalman-Filter-Project/build/CMakeFiles/ExtendedKF.dir
-/home/dominik/Udacity/Project/Term2/P6/P6-Extended-Kalman-Filter-Project/build/CMakeFiles/edit_cache.dir
