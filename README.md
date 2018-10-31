@@ -21,10 +21,13 @@ Running the implementation with the [simulator](https://github.com/udacity/self-
 
 | RMSE | Dataset 1 Both | Dataset 1 Laser | Dataset 1 Radar | Dataset 2 Both | Dataset 2 Laser | Dataset 2 Radar |
 |------|----------------|-----------------|-----------------|----------------|-----------------|-----------------|
-| X    | 0.0973         | 0.1473          | 0.2302          | 0.0726         | 0.1169          | 0.2706          |
-| Y    | 0.0855         | 0.1153          | 0.3464          | 0.0965         | 0.1260          | 0.3853          |
-| VX   | 0.4513         | 0.6383          | 0.5835          | 0.4216         | 0.6227          | 0.6524          |
-| VY   | 0.4399         | 0.5346          | 0.8040          | 0.4932         | 0.6024          | 0.9218          |
+| X    | **0.0973**     | 0.1473          | 0.2302          | **0.0726**     | 0.1169          | 0.2706          |
+| Y    | **0.0855**     | 0.1153          | 0.3464          | **0.0965**     | 0.1260          | 0.3853          |
+| VX   | **0.4513**     | 0.6383          | 0.5835          | **0.4216**     | 0.6227          | 0.6524          |
+| VY   | **0.4399**     | 0.5346          | 0.8040          | **0.4932**     | 0.6024          | 0.9218          |
+
+With these results the RMSE of the implementation is low enough to successfully track the car.
+
 
 As one can see combining laser and radar measurements significantly improve the performance if as one would only use one sensor. Additionally the data shows that the laser measurements provide a way more accurate prediction. While the VX, VY RMSE of the radar sensor is not that bad compared to the laser sensor, the RMSE of X and Y is up to 3 times higher for the radar sensor. The reason for this should be that the position X and Y can only be measured indirectly by the radar sensor while the laser sensor measures it directly.
 
